@@ -6,13 +6,6 @@
 32679 -> 6
 */
 
-// Console.WriteLine("Введите любое целое число ");
-// int number = Convert.ToInt32(Console.ReadLine());
-
-
-// string testNum = Console.ReadLine();
-// Console.WriteLine("Третий символ " + testNum [2]);
-
 int number = Convert.ToInt32(Console.ReadLine());
 String testNum = Convert.ToString(number);
 
