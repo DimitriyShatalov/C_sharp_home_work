@@ -3,13 +3,11 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-int A = Convert.ToInt32(Console.ReadLine());
-int B = Convert.ToInt32(Console.ReadLine());
+// int A = Convert.ToInt32(Console.ReadLine());
+// int B = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(Math.Pow(A,B));
+int A = new Random().Next(1,10);
+int B = new Random().Next(1,10);
 
-// int A = new Random().Next(1,10);
-// int B = new Random().Next(1,10);
-
-// Console.WriteLine((A,B));
-// Console.WriteLine(Math.Pow(A,B));
+Console.WriteLine((A,B));
+Console.WriteLine($"Число {A} в степени {B} = {Math.Pow(A,B)}");
