@@ -68,5 +68,6 @@ for (int i = 0; i < myArray.Length; i++)
 Console.WriteLine($"[{String.Join("; ", myArray)}]");
 Console.WriteLine($"Максимум = {myArray.Max()}");
 Console.WriteLine($"Минимум = {myArray.Min()}");
+
 Console.WriteLine($"Разница между макс и мин = {myArray.Max() - myArray.Min()}");
 
