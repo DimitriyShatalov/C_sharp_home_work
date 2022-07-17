@@ -15,9 +15,8 @@ for(int i = 0; i < matrix.GetLength(0); i++)
 {
     for(int j = 0; j< matrix.GetLength(1); j++)
     {
-        //matrix[i,j] = Math.Round(new Random().NextDouble()*100);
-        //matrix[i,j] = Math.Round((5 - rand.Next(11) + rand.NextDouble()), 3);
-        matrix[i,j] = Math.Round(rand.Next(-20, 20) + rand.NextDouble(), 2);
+        matrix[i,j] = Math.Round(rand.Next(-20, 20) + rand.NextDouble(), 2);       //matrix[i,j] = Math.Round(new Random().NextDouble()*100);
+                                                                                   //matrix[i,j] = Math.Round((5 - rand.Next(11) + rand.NextDouble()), 3)
         Console.Write(matrix[i,j] + "\t");
     }
     Console.WriteLine();
@@ -30,7 +29,7 @@ for(int i = 0; i < matrix.GetLength(0); i++)
 // 1 4 7 2
 // 5 9 2 3
 // 8 4 2 4     17 -> такого числа в массиве нет
-/*
+
 int[,] matrix = 
 {   {1,4,7,2},
     {5,9,2,3},
@@ -47,7 +46,7 @@ for (int i = 0; i < matrix.GetLength(0); i++)
     Console.WriteLine();
 }
 Console.WriteLine($"Числа {element} в этом массиве нет");
-*/
+
 
 // Задача 52. Задайте двумерный массив из целых чисел.
 // Найдите среднее арифметическое элементов в каждом столбце.
@@ -57,12 +56,10 @@ Console.WriteLine($"Числа {element} в этом массиве нет");
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-
-/*
 int[,] matrix =
 {   {1,4,7,2},
     {5,9,2,3},
-    {8,4,2,5}, };
+    {8,4,2,4}, };
 
 int rowLength = matrix.GetLength(0);
 int columnLength = matrix.GetLength(1);
@@ -86,7 +83,7 @@ for (int i = 0; i < columnLength; i++)
     {
         sum = sum + matrix[j, i];  
     }
-    arrayAverage[i] = Math.Round((sum / rowLength), 3); 
+    arrayAverage[i] = Math.Round((sum / rowLength), 2); 
     sum = 0; 
 }
 
@@ -96,7 +93,7 @@ for (int i = 0; i < columnLength; i++)
     Console.Write(arrayAverage[i] + " "); 
 }
 Console.WriteLine();
-*/
+
 
 
 
