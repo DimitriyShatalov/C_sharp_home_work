@@ -10,11 +10,8 @@
 // 1 2 4 7
 // 2 3 5 9
 // 2 4 4 8
-/*
-int[,] matrix =
-   {   {1,4,7,2},
-        {5,9,2,3},
-        {8,4,2,4}, };
+
+int[,] matrix = {{1,4,7,2}, {5,9,2,3}, {8,4,2,4}};
 
 int rowLength = matrix.GetLength(0);
 int columnLength = matrix.GetLength(1);
@@ -57,7 +54,7 @@ for (int i = 0; i < rowLength; i++)
     Console.WriteLine();
 }
 Console.WriteLine();
-*/
+
 
 // Задача 56: Задайте прямоугольный двумерный массив. 
 // Напишите программу, которая будет находить строку с наименьшей суммой элементов.
@@ -69,12 +66,8 @@ Console.WriteLine();
 // Программа считает сумму элементов в каждой строке
 // и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
-/*
-int[,] matrix =
-{   {1,4,7,3},
-    {5,9,2,3},
-    {8,4,2,4},
-    {8,4,2,6} };
+
+int[,] matrix = {{1,4,7,3}, {5,9,2,3}, {8,4,2,4}, {8,4,2,6}};
 int sum = 0;
 int[] array = new int[4];
 int min = int.MaxValue;
@@ -102,13 +95,11 @@ for (int i = 0; i < matrix.GetLength(0); i++)
             min = sum; idMin = i;
             }
             Console.WriteLine("Сумма " + (i+1) + " строки равна " + sum);
-            sum = 0;
-             
+            sum = 0;  
     }
 }
 Console.WriteLine("Строка с наименьшей суммой элементов = " + min + ", под индексом: " + idMin);
 Console.ReadKey();
-*/
 
 // Задача 58: Задайте две матрицы. 
 // Напишите программу, которая будет находить произведение двух матриц.
@@ -124,7 +115,6 @@ Console.ReadKey();
 // 56 8 4 24
 // 10 6 24 49
 
-/*
 int[,] matrixA =
 {   {1,4,7,2},
     {5,9,2,3},
@@ -180,7 +170,6 @@ for (int i = 0; i < rowA; i++)
     }
     Console.WriteLine();
 }
-*/
 
 // Задача 60. Сформируйте трёхмерный массив из неповторяющихся двузначных чисел.
 // Напишите программу, которая будет построчно выводить массив, 
@@ -189,10 +178,7 @@ for (int i = 0; i < rowA; i++)
 // 12(0,0,0) 22(0,0,1)
 // 45(1,0,0) 53(1,0,1)
 
-/*
 int[,,] matrix = new int [2,2,2];
-//Random rand = new Random();
-int number = new Random().Next();
 
 for (int i = 0; i < matrix.GetLength(0); i++)
 {
@@ -200,13 +186,16 @@ for (int i = 0; i < matrix.GetLength(0); i++)
     {
         for (int k = 0; k < matrix.GetLength(2); k++)
         {
-            matrix[i,j,k] = new Random().Next(-99,100);
+            matrix[i,j,k] = new Random().Next(10,100);
             Console.Write($"{matrix[i,j,k]} ({i},{j},{k})" + "\t");
         }
     Console.WriteLine();
     }
 }
-*/
+
+//для 62 задачи пока не созрел :'( 	:-$
+
+
 
 
 
