@@ -59,5 +59,5 @@ if (m == 0) return AckermannFunc(n - 1, 1);
 
 return AckermannFunc(n - 1, AckermannFunc(n, m - 1));
 }
-Console.WriteLine($"Функция Аккермана A({m},{n})= {AckermannFunc(m,n)}");
+Console.WriteLine($"Функция Аккермана A({n},{m})= {AckermannFunc(n,m)}");
 Console.ReadKey();
