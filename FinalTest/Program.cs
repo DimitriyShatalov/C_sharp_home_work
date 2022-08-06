@@ -23,7 +23,6 @@ for (int i = 0; i < arrString.Length; i++)
     if (arrString[i].Length <= 3)
     {
         newArray[k] = arrString[i];
-        //Console.Write($"{newArray[k]}" + " ");
         k++;
     }
 }
